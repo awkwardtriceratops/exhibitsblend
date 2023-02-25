@@ -37,6 +37,21 @@ header {
     text-decoration: none;
 }
 
+#abouttext a {
+    /*center at bottom of page similar style to the a*/
+    position: fixed;
+    bottom: 2em;
+    left: 50%;
+    color: black;
+    margin-left: -20px;
+}
+
+#abouttext {
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
 #leftimage {
     float: left;
     padding: 10px;
@@ -61,7 +76,7 @@ header {
 }
 
 #generatebutton {
-    width: 40px;
+    width: 70px;
     color: black;
     background-color: #fff;
     border: 1px solid black;
@@ -77,7 +92,7 @@ header {
     /* float bottom center of page*/
     position: fixed;
     bottom: 10em;
-    left: 50%;
+    left: 48.15%;
     margin-left: -20px;
 }
 
@@ -98,6 +113,77 @@ header {
     /* put both buttons side by side */
     position: fixed;
     bottom: 2em;
-    left: 50%;
+    left: 49.17%;
     margin-left: -20px;
+}
+
+
+/*place right button to the right side of the home button w/ same style*/
+
+#rightbutton {
+    width: 40px;
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    position: fixed;
+    bottom: 6em;
+    left: 90%;
+    margin-left: -20px;
+}
+
+#leftbutton {
+    width: 40px;
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    position: fixed;
+    bottom: 6em;
+    left: 10%;
+    margin-left: -20px;
+}
+
+
+/*copyright small at bottom*/
+
+#footer {
+    height: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+/* make all images un copyable and undraggable */
+
+image {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
 }

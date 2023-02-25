@@ -11,10 +11,13 @@
 
     <div id="middleimagediv"></div>
     <br>
-    <div id='generatebutton' onclick="blend()">Blend</div>
+    <div id='generatebutton' onclick="blend()">Reimagine</div>
     <div id='homebutton' onclick="window.location.href='../index.html'">Home</div>
+    <div id="rightbutton" onclick="window.location.href='exhibite.html'">Next</div>
+    <div id="leftbutton" onclick="window.location.href='exhibitc.html'">Back</div>
     <script>
         //this is the javascript that will blend the images
+        var oncedone = 0;
 
         function blend() {
             var randomint = Math.floor(Math.random() * 4) + 1;
@@ -29,10 +32,25 @@
                     clearInterval(timer);
                 }
                 document.getElementById("middleimage").style.opacity = op;
-                op += 0.1;
-            }, 50);
-
+                op += 0.01;
+            }, 5);
+            //set the opacity of the left and right images to 0 fading them out
+            var op2 = 1
+            if (oncedone == 0) {
+                var timersecond = setInterval(function() {
+                    if (op2 <= 0) {
+                        clearInterval(timer);
+                    }
+                    document.getElementById("leftimage").style.opacity = op2;
+                    document.getElementById("rightimage").style.opacity = op2;
+                    op2 -= 0.01;
+                }, 5);
+                oncedone = 1;
+            }
 
         }
     </script>
+    <footer>
+        <p id="footer">© 2023 new child</p>
+    </footer>
 </body>
