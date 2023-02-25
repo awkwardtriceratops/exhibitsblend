@@ -91,7 +91,7 @@ header {
     text-align: center;
     /* float bottom center of page*/
     position: fixed;
-    bottom: 5em;
+    bottom: 10em;
     left: 48.01%;
     margin-left: -20px;
 }
