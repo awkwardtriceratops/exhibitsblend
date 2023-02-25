@@ -1,0 +1,38 @@
+<head>
+    <meta charset="utf-8">
+    <title>Exhibit H</title>
+    <link rel="stylesheet" href="../css.css">
+
+</head>
+
+<body>
+    <image src="../images/i1.jpg" id="leftimage"></image>
+    <image src="../images/i2.jpg" id="rightimage"></image>
+
+    <div id="middleimagediv"></div>
+    <br>
+    <div id='generatebutton' onclick="blend()">Blend</div>
+    <div id='homebutton' onclick="window.location.href='../index.html'">Home</div>
+    <script>
+        //this is the javascript that will blend the images
+
+        function blend() {
+            var randomint = Math.floor(Math.random() * 4) + 1;
+            var linktorandomimage = '../blended/i' + randomint + '.png';
+            //place linktorandomimage in middleimage div
+            document.getElementById("middleimagediv").innerHTML = "<img src='" + linktorandomimage + "' id='middleimage'>";
+            //fade the image in
+            document.getElementById("middleimage").style.opacity = 0;
+            var op = 0;
+            var timer = setInterval(function() {
+                if (op >= 1) {
+                    clearInterval(timer);
+                }
+                document.getElementById("middleimage").style.opacity = op;
+                op += 0.1;
+            }, 50);
+
+
+        }
+    </script>
+</body>

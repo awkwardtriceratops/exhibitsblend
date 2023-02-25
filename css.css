@@ -1,0 +1,103 @@
+/* make the style for my very simple white like the apple website */
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin: 0;
+}
+
+
+/* make the style for my very simple header like the apple website */
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+/*center the exhibittext*/
+
+#exhibitstext {
+    padding: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#exhibitstext a {
+    color: #000;
+    text-decoration: none;
+}
+
+#leftimage {
+    float: left;
+    padding: 10px;
+    width: 20%;
+}
+
+#rightimage {
+    float: right;
+    padding: 10px;
+    width: 20%;
+}
+
+
+/*put the middle image in the center of the left and right image*/
+
+#middleimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding-top: 2em;
+}
+
+#generatebutton {
+    width: 40px;
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    /* float bottom center of page*/
+    position: fixed;
+    bottom: 10em;
+    left: 50%;
+    margin-left: -20px;
+}
+
+#homebutton {
+    width: 40px;
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    /* put both buttons side by side */
+    position: fixed;
+    bottom: 2em;
+    left: 50%;
+    margin-left: -20px;
+}
