@@ -15,7 +15,7 @@ body {
 header {
     background-color: #fff;
     border-bottom: 1px solid #e5e5e5;
-    height: 50px;
+    height: 40px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -26,10 +26,14 @@ header {
 /*center the exhibittext*/
 
 #exhibitstext {
-    padding: 50px;
-    text-align: center;
+    padding: 40px;
+    text-align: left;
     text-decoration: none;
     font-size: 20px;
+    /*center div in the middle*/
+    position: fixed;
+    left: 46%;
+    margin-left: -20px;
 }
 
 #exhibitstext a {

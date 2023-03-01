@@ -2,8 +2,8 @@ import numpy as np
 import fs as fs
 import matplotlib.pyplot as plt
 
-for letter in ['i']:
-    imagedirectory='quadrants/'+letter+'ai.png'
+for letter in ['j','q','r','s','t']:
+    imagedirectory='images/'+letter+'ai.png'
     #Split image into 4 quadrants and save them
     image = plt.imread(imagedirectory)
     image1 = image[0:512,0:512]

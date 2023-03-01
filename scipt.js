@@ -1,9 +1,9 @@
  //this is the javascript that will blend the images
  var oncedone = 0;
 
- function blend() {
+ function blend(exhibit) {
      var randomint = Math.floor(Math.random() * 4) + 1;
-     var linktorandomimage = '../blended/a' + randomint + '.png';
+     var linktorandomimage = '../blended/' + exhibit + randomint + '.png';
      //place linktorandomimage in middleimage div
      document.getElementById("middleimagediv").innerHTML = "<img src='" + linktorandomimage + "' id='middleimage'>";
      //fade the image in
